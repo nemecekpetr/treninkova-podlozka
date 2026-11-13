@@ -1,4 +1,5 @@
 // Build webové verze, která jde otevřít dvojklikem (file://) – bez serveru: jeden klasický skript místo ES modulů.
+import { readFileSync } from 'node:fs';
 import { defineConfig } from 'vite';
 
 const classicScript = () => ({
@@ -12,6 +13,7 @@ const classicScript = () => ({
 
 export default defineConfig({
   base: './',
+  define: { __APP_VERSION__: JSON.stringify(JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8')).version) },
   publicDir: 'assets',
   plugins: [classicScript()],
   build: {

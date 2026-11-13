@@ -26,7 +26,7 @@ export default function about(_p, { back }) {
   const bk = btn(`${icon('back')}Zpět`, 'btn-primary', () => back(), { auto: true });
   bk.style.minHeight = u(6); bk.style.fontSize = u(2.1);
   head.append(ttl, bk);
-  const intro = h('div', 'muted', 'Bezplatná nekomerční aplikace pro trénink s fotbalovou podložkou. Všechna data zůstávají v zařízení, nic se nikam neodesílá. Autor: <b style="color:#fff">Jakub Uhlíř</b>. Upravil <b style="color:#fff">Petr Němeček</b> (hlas David, barvy Rapid Plzeň).');
+  const intro = h('div', 'muted', `Bezplatná nekomerční aplikace pro trénink s fotbalovou podložkou. Všechna data zůstávají v zařízení, nic se nikam neodesílá. Autor: <b style="color:#fff">Jakub Uhlíř</b>. Upravil <b style="color:#fff">Petr Němeček</b> (hlas David, barvy Rapid Plzeň). Verze <b style="color:#fff">${typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : '?'}</b>.`);
   intro.style.fontSize = u(1.7);
   el.append(head, intro);
 

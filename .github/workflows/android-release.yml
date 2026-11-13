@@ -1,7 +1,8 @@
 name: Android APK
 
 # Po vytvoření značky (tagu) verze, např. v1.0.0, postaví APK a připojí ho k vydání (Releases).
-# Použití: git tag v1.0.0 && git push origin v1.0.0
+# Použití: zvýšit verzi (npm version 1.2.0 --no-git-tag-version), commitnout, pak git tag v1.2.0 && git push origin v1.2.0.
+# Verzi v aplikaci (O aplikaci) i v APK (versionName, versionCode) určuje package.json.
 on:
   push:
     tags: ['v*']
