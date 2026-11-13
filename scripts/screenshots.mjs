@@ -6,6 +6,8 @@ import fs from 'node:fs';
 const BROWSER = [
   'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
+  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+  '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge',
 ].find((p) => fs.existsSync(p));
 if (!BROWSER) throw new Error('Nenalezen Edge ani Chrome');
 const BASE = process.env.APP_URL || 'http://localhost:5173';
@@ -32,7 +34,9 @@ for (const [name, wait] of SHOTS.filter(([n]) => !only.length || only.includes(n
   fs.writeFileSync(`docs/screenshots/${name}.png`, Buffer.from(shot.data, 'base64'));
   console.log('snímek', name);
   ws.close();
-  spawnSync('taskkill', ['/PID', String(proc.pid), '/T', '/F']); // celý strom procesů, jinak další snímek ožívá starý prohlížeč na stejném portu
+  // celý strom procesů, jinak další snímek ožívá starý prohlížeč na stejném portu
+  if (process.platform === 'win32') spawnSync('taskkill', ['/PID', String(proc.pid), '/T', '/F']);
+  else { proc.kill('SIGKILL'); spawnSync('pkill', ['-9', '-f', `user-data-dir=${dir}`]); }
   try { fs.rmSync(dir, { recursive: true, force: true }); } catch { /* smaže se příště */ }
   await sleep(600);
 }

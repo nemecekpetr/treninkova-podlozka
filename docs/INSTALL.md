@@ -12,8 +12,8 @@ Tréninková podložka funguje třemi způsoby. Vyberte ten nejjednodušší pro
 
 ## A) Ve webovém prohlížeči (nic se neinstaluje)
 
-1. Otevřete stránku aplikace: **https://kuba-uhlir.github.io/treninkova-podlozka/**
-2. Chcete si to jen vyzkoušet? Otevřete **https://kuba-uhlir.github.io/treninkova-podlozka/?demo**. Vytvoří se hotový ukázkový hráč Jakub (číslo 24, česká reprezentace) s trochou postupu a kartami (pokud už v prohlížeči nějací hráči jsou, nic se nezmění).
+1. Otevřete stránku aplikace: **https://nemecekpetr.github.io/treninkova-podlozka/**
+2. Chcete si to jen vyzkoušet? Otevřete **https://nemecekpetr.github.io/treninkova-podlozka/?demo**. Vytvoří se hotový ukázkový hráč Jakub (číslo 24, česká reprezentace) s trochou postupu a kartami (pokud už v prohlížeči nějací hráči jsou, nic se nezmění).
 3. Na telefonu nebo tabletu ji můžete přidat na plochu: v Chrome menu ⋮ → **Přidat na plochu**.
 4. Pro celou obrazovku stiskněte **F11** (počítač).
 
@@ -21,7 +21,7 @@ Tréninková podložka funguje třemi způsoby. Vyberte ten nejjednodušší pro
 
 ## B) Aplikace pro Android (APK)
 
-1. Na telefonu otevřete stránku **Releases**: https://github.com/kuba-uhlir/treninkova-podlozka/releases
+1. Na telefonu otevřete stránku **Releases**: https://github.com/nemecekpetr/treninkova-podlozka/releases
 2. U nejnovější verze stáhněte soubor **`treninkova-podlozka.apk`**.
 3. Otevřete stažený soubor. Android zobrazí upozornění, že je instalace z neznámého zdroje blokována. Klepněte na **Nastavení** a povolte **Instalovat z tohoto zdroje** pro prohlížeč nebo správce souborů, který jste použili.
 4. Vraťte se zpět a dokončete instalaci. Aplikace se jmenuje **Tréninková podložka**.

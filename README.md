@@ -6,26 +6,34 @@
 
 Trenér hlasem říká, kam s míčem, hráč sbírá hvězdy, odměny a sběratelské karty slavných fotbalistů.
 
-![Android TV](https://img.shields.io/badge/Android%20TV-ready-16C45A?style=for-the-badge&logo=android&logoColor=white)
-![Web](https://img.shields.io/badge/Web-prohlížeč-16C45A?style=for-the-badge&logo=googlechrome&logoColor=white)
+![Android TV](https://img.shields.io/badge/Android%20TV-ready-2E9BFF?style=for-the-badge&logo=android&logoColor=white)
+![Web](https://img.shields.io/badge/Web-prohlížeč-2E9BFF?style=for-the-badge&logo=googlechrome&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Capacitor](https://img.shields.io/badge/Capacitor-6-119EFF?style=for-the-badge&logo=capacitor&logoColor=white)
-![Zdarma](https://img.shields.io/badge/cena-zdarma-16C45A?style=for-the-badge)
+![Zdarma](https://img.shields.io/badge/cena-zdarma-2E9BFF?style=for-the-badge)
 
-<a href="https://kuba-uhlir.github.io/treninkova-podlozka/?demo"><img src="https://img.shields.io/badge/%E2%96%B6%20Vyzkou%C5%A1et%20demo%20online-bez%20instalace-16C45A?style=for-the-badge&labelColor=0A0A0C" alt="Vyzkoušet demo online" height="44"></a>
-<a href="https://github.com/kuba-uhlir/treninkova-podlozka/releases/latest/download/treninkova-podlozka.apk"><img src="https://img.shields.io/badge/%E2%AC%87%20St%C3%A1hnout%20APK-Android%20a%20Android%20TV-16C45A?style=for-the-badge&labelColor=0A0A0C&logo=android&logoColor=white" alt="Stáhnout APK pro Android" height="44"></a>
+<a href="https://nemecekpetr.github.io/treninkova-podlozka/?demo"><img src="https://img.shields.io/badge/%E2%96%B6%20Vyzkou%C5%A1et%20demo%20online-bez%20instalace-2E9BFF?style=for-the-badge&labelColor=0A0A0C" alt="Vyzkoušet demo online" height="44"></a>
+<a href="https://github.com/nemecekpetr/treninkova-podlozka/releases/latest/download/treninkova-podlozka.apk"><img src="https://img.shields.io/badge/%E2%AC%87%20St%C3%A1hnout%20APK-Android%20a%20Android%20TV-2E9BFF?style=for-the-badge&labelColor=0A0A0C&logo=android&logoColor=white" alt="Stáhnout APK pro Android" height="44"></a>
 
 <br><br>
 
-<a href="https://kuba-uhlir.github.io/treninkova-podlozka/?demo"><img src="docs/screenshots/home.png" alt="Úvodní obrazovka, klikněte pro vyzkoušení" width="860"></a>
+<a href="https://nemecekpetr.github.io/treninkova-podlozka/?demo"><img src="docs/screenshots/home.png" alt="Úvodní obrazovka, klikněte pro vyzkoušení" width="860"></a>
 
 </div>
 
 ---
 
+## Tato verze
+
+Upravená verze aplikace [Tréninková podložka](https://github.com/kuba-uhlir/treninkova-podlozka) od Jakuba Uhlíře. Oproti originálu:
+
+- **Hlas trenéra David** z ElevenLabs (výchozí, přirozená čeština). Původní hlas Antonín zůstává v nastavení pro rodiče. Nahrávky jsou součástí aplikace a fungují offline.
+- **Barvy Rapid Plzeň**: světle modrý akcent a modrá záře v celé grafice, včetně avatarů a ikony aplikace.
+- **Rapid Plzeň** mezi místními kluby, s logem a modrobílým pruhovaným dresem.
+
 ## ▶ Vyzkoušejte hned
 
-> **[Otevřít demo](https://kuba-uhlir.github.io/treninkova-podlozka/?demo)**: v prohlížeči, bez instalace a bez registrace.
+> **[Otevřít demo](https://nemecekpetr.github.io/treninkova-podlozka/?demo)**: v prohlížeči, bez instalace a bez registrace.
 
 Odkaz vytvoří hotového ukázkového hráče **Jakuba** (číslo 24, česká reprezentace) s trochou postupu, takže si můžete rovnou projít týdenní lištu, odměny, sběratelské karty i zápas. Spusťte **Trénink**, nechte si říct, kam s míčem, a postavte podložku před obrazovku.
 
@@ -46,15 +54,15 @@ Odkaz vytvoří hotového ukázkového hráče **Jakuba** (číslo 24, česká r
 | 🏆 **75 odměn** | Medaile, poháry, koruny a další v bronzu, stříbře, zlatě a diamantu za XP, tréninky, pravidelnost, dovednosti, zápasy i karty. |
 | 📅 **Týden a výzva dne** | Týdenní lišta s hvězdičkami, denní mini‑výzva a rozcvička jednou denně. |
 | 👨‍👩‍👦 **Rodiče** | Úroveň a tempo nastavuje rodič, vlastní tréninky, výběr podložky a barvy, hlas nebo jen pípnutí. Chráněno PINem. |
-| 📺 **10‑foot UI** | Ovládání dálkovým ovladačem (D‑pad), velké prvky, tmavý moderní vzhled se zeleným neonovým akcentem. Funguje i dotykem a myší. |
+| 📺 **10‑foot UI** | Ovládání dálkovým ovladačem (D‑pad), velké prvky, tmavý moderní vzhled s modrým neonovým akcentem v barvách Rapid Plzeň. Funguje i dotykem a myší. |
 | 🔒 **Bez účtů a cloudu** | Všechna data jsou jen v zařízení. Žádné reklamy, žádné sledování. |
 
 ## Instalace (pro rodiče)
 
 | Chci… | Návod |
 |---|---|
-| **vyzkoušet hned** v prohlížeči | otevřít [webovou verzi](https://kuba-uhlir.github.io/treninkova-podlozka/) nebo [demo s hotovým hráčem](https://kuba-uhlir.github.io/treninkova-podlozka/?demo) |
-| **Android telefon nebo tablet** | [stáhnout APK (`treninkova-podlozka.apk`)](https://github.com/kuba-uhlir/treninkova-podlozka/releases/latest/download/treninkova-podlozka.apk), všechna vydání jsou v [Releases](https://github.com/kuba-uhlir/treninkova-podlozka/releases) |
+| **vyzkoušet hned** v prohlížeči | otevřít [webovou verzi](https://nemecekpetr.github.io/treninkova-podlozka/) nebo [demo s hotovým hráčem](https://nemecekpetr.github.io/treninkova-podlozka/?demo) |
+| **Android telefon nebo tablet** | [stáhnout APK (`treninkova-podlozka.apk`)](https://github.com/nemecekpetr/treninkova-podlozka/releases/latest/download/treninkova-podlozka.apk), všechna vydání jsou v [Releases](https://github.com/nemecekpetr/treninkova-podlozka/releases) |
 | **Android TV** | stejné APK přes aplikaci Downloader nebo USB, viz návod |
 
 Podrobný postup krok za krokem je v **[docs/INSTALL.md](docs/INSTALL.md)**.
@@ -86,7 +94,7 @@ Podrobný postup krok za krokem je v **[docs/INSTALL.md](docs/INSTALL.md)**.
 
 ### Grafika
 
-Grafiku aplikace (úvodní míč, pozadí, ikony, odměny, štíty úrovní, avatary, rámečky karet a efekty) jsme vytvořili pomocí **Gemini** a sjednotili ji do jednoho tmavého stylu se zeleným neonem. Skript [`scripts/build-art.mjs`](scripts/build-art.mjs) z obrázků vyřízne průhledné prvky do `assets/img/art/`, přehled je v [`assets/ASSETS.md`](assets/ASSETS.md). Podložka, nohy, míč na podložce a šipky se kreslí kódem.
+Grafiku aplikace (úvodní míč, pozadí, ikony, odměny, štíty úrovní, avatary, rámečky karet a efekty) jsme vytvořili pomocí **Gemini** a sjednotili ji do jednoho tmavého stylu se zeleným neonem. V této verzi je přebarvená na modrou Rapid Plzeň skriptem [`scripts/recolor-art.mjs`](scripts/recolor-art.mjs). Skript [`scripts/build-art.mjs`](scripts/build-art.mjs) z obrázků vyřízne průhledné prvky do `assets/img/art/`, přehled je v [`assets/ASSETS.md`](assets/ASSETS.md). Podložka, nohy, míč na podložce a šipky se kreslí kódem.
 
 ## Rychlý start
 
@@ -147,7 +155,8 @@ K **instalaci ani spuštění aplikace nepotřebujete nic stahovat**: fotky kare
 
 | Příkaz | Co dělá |
 |---|---|
-| `node scripts/gen-voices.mjs && node scripts/trim-voices.mjs` | znovu vygeneruje a ořízne hlasové hlášky Trenéra |
+| `node scripts/gen-voices.mjs && node scripts/trim-voices.mjs` | znovu vygeneruje a ořízne hlasové hlášky Trenéra (hlas David potřebuje `ELEVENLABS_API_KEY`, viz [`assets/AUDIO.md`](assets/AUDIO.md)) |
+| `node scripts/recolor-art.mjs 209` | přebarví zelenou záři grafiky na modrou (`avatary`, `android` = jen postavičky, jen ikony Androidu) |
 | `node scripts/fetch-cards.mjs` | znovu stáhne fotky karet z Wikimedia Commons včetně autorů |
 | `node scripts/make-mats.mjs` | znovu vygeneruje JSON podložek |
 | `node scripts/build-art.mjs` | vyřízne grafiku z Gemini (složka `obrazky/`) do `assets/img/art/`; jen část např. `node scripts/build-art.mjs levels` |
@@ -165,6 +174,7 @@ Aplikace není nijak spojená s uvedenými kluby, hráči, svazy ani výrobci po
 
 <div align="center">
 
-Vytvořil **Jakub Uhlíř** pro malé fotbalisty. ⚽
+Vytvořil **Jakub Uhlíř** pro malé fotbalisty. ⚽<br>
+Hlas Davida a barvy Rapid Plzeň doplnil Petr Němeček.
 
 </div>

@@ -9,24 +9,6 @@
     "logo": "img/teams/rapid-plzen.png"
   },
   {
-    "id": "vicemilice",
-    "name": "TJ Vícemilice",
-    "country": "Místní kluby",
-    "primary": "#1F7A3E",
-    "secondary": "#FFFFFF",
-    "kit": "plain",
-    "logo": "img/teams/vicemilice.png"
-  },
-  {
-    "id": "obrany",
-    "name": "SK Obřany",
-    "country": "Místní kluby",
-    "primary": "#2B7FD0",
-    "secondary": "#E8A23B",
-    "kit": "plain",
-    "logo": "img/teams/obrany.png"
-  },
-  {
     "id": "sparta",
     "name": "Sparta Praha",
     "country": "Česko",

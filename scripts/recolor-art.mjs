@@ -6,7 +6,9 @@
 //   node scripts/recolor-art.mjs 209 [soubor ...]     posune zelenou na odstín 209° (modrá Rapid Plzeň)
 //   node scripts/recolor-art.mjs 209 android          jen ikony a banner pro Android
 //
-// Postavičky (av_*) se nepřebarvují: zelená tam může být oblečení.
+//   node scripts/recolor-art.mjs 209 avatary          postavičky (av_*): zelené pozadí, kroužek i zelené dresy
+//
+// Bez výčtu se postavičky (av_*) nepřebarvují: zelená je tam i oblečení, přebarvují se jen na vyžádání.
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -42,7 +44,7 @@ const target = measure ? 0 : Number(args[0]);
 if (!measure && !(target >= 0 && target < 360)) { console.log('Použití: node scripts/recolor-art.mjs <odstín 0–359> [soubor ...] | --measure'); process.exit(1); }
 const only = args.slice(1);
 const onlyWebp = only.filter((x) => x !== 'android');
-const files = fs.readdirSync(DIR).filter((f) => f.endsWith('.webp') && !SKIP.test(f) && (!only.length ? true : onlyWebp.includes(f)))
+const files = fs.readdirSync(DIR).filter((f) => f.endsWith('.webp') && (!only.length ? !SKIP.test(f) : onlyWebp.includes(f) || (onlyWebp.includes('avatary') && SKIP.test(f))))
   .map((f) => path.join(DIR, f));
 // Android: ikony aplikace, TV banner a úvodní obrazovka (PNG)
 const RES = 'android/app/src/main/res';
