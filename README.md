@@ -39,6 +39,7 @@ Odkaz vytvoří hotového ukázkového hráče **Jakuba** (číslo 24, česká r
 
 - Všechna data zůstávají jen ve vašem prohlížeči a nikam se neodesílají.
 - Pokud už v prohlížeči nějaké hráče máte, demo je nepřepíše.
+- Ukázkový hráč patří jen k demu. Při běžném otevření aplikace (bez `?demo`) se sám smaže.
 - Zvuk se spustí po prvním klepnutí na stránku.
 
 ## Co aplikace umí
