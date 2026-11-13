@@ -7,7 +7,9 @@ const SOURCES = [
   ['Fotky hráčů na kartách', 'Wikimedia Commons, volné licence (CC BY, CC BY-SA, public domain). Autor a licence každé fotky jsou uvedeny na rubu karty a v seznamu níže. Fotky se jen ořezávají.'],
   ['Texty u karet', 'Vlastní, ručně psané popisy hráčů a zajímavosti.'],
   ['Loga a názvy klubů a reprezentací', 'Jsou ochrannými známkami svých vlastníků a slouží jen k označení týmu. Aplikace není s kluby, hráči ani svazy nijak spojená ani jimi podporovaná. Zdroje: oficiální weby klubů a databáze TheSportsDB.'],
-  ['Hlas Trenér', 'Syntetizovaný neuronový hlas (Microsoft Edge TTS). Věty jsou předgenerované a uložené v aplikaci.'],
+  ['Hlas David', 'Hlas „David – The Patient Teacher“ z knihovny ElevenLabs, vygenerovaný v placeném tarifu s licencí pro komerční užití. Věty jsou předgenerované a uložené v aplikaci, takže fungují i bez internetu.'],
+  ['Hlas Antonín', 'Syntetizovaný neuronový hlas (Microsoft Edge TTS), dá se zvolit v nastavení pro rodiče. Věty jsou předgenerované a uložené v aplikaci.'],
+  ['Grafika', 'Míč, pozadí, odměny, avatary a rámečky karet vytvořené pomocí Gemini a upravené pro aplikaci. Přebarvené do modré a bílé podle klubu Rapid Plzeň.'],
   ['Zvuky a hudba', 'Vlastní syntetizované zvuky (úvod, úspěch, odměna, konfety, klik).'],
   ['Písmo', 'Inter, licence SIL Open Font License 1.1.'],
   ['Ikony', 'Lucide (lucide.dev), licence ISC.'],
@@ -24,7 +26,7 @@ export default function about(_p, { back }) {
   const bk = btn(`${icon('back')}Zpět`, 'btn-primary', () => back(), { auto: true });
   bk.style.minHeight = u(6); bk.style.fontSize = u(2.1);
   head.append(ttl, bk);
-  const intro = h('div', 'muted', 'Bezplatná nekomerční aplikace pro trénink s fotbalovou podložkou. Všechna data zůstávají v zařízení, nic se nikam neodesílá. Autor: <b style="color:#fff">Jakub Uhlíř</b>.');
+  const intro = h('div', 'muted', 'Bezplatná nekomerční aplikace pro trénink s fotbalovou podložkou. Všechna data zůstávají v zařízení, nic se nikam neodesílá. Autor: <b style="color:#fff">Jakub Uhlíř</b>. Upravil <b style="color:#fff">Petr Němeček</b> (hlas David, barvy Rapid Plzeň).');
   intro.style.fontSize = u(1.7);
   el.append(head, intro);
 
