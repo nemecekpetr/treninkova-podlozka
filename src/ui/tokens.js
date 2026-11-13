@@ -1,10 +1,10 @@
 // Design systém – jediný zdroj pravdy pro barvy a rozměry.
 // Tailwind čte `colors`, CSS proměnné se generují z `cssVars()`.
-// Směr: černá + jedna výrazná zelená (tráva), zóny jako jemné neonové akcenty.
+// Směr: černá + jedna výrazná modrá v barvách Rapid Plzeň (světle modrá a bílá), zóny jako jemné neonové akcenty.
 export const colors = {
   ink: { 950: '#050506', 900: '#0A0A0C', 800: '#111114', 700: '#18181C', 600: '#232329' },
-  sun: { DEFAULT: '#16C45A', soft: '#4EE08A', deep: '#0E9A44' },
-  grass: { DEFAULT: '#2FD576', dark: '#17A257' },
+  sun: { DEFAULT: '#2E9BFF', soft: '#7CC4FF', deep: '#1570D6' },
+  grass: { DEFAULT: '#7FC8FF', dark: '#1F7FD9' },
   chalk: '#F5F5F7',
   mute: '#8E8E98',
   zone: {

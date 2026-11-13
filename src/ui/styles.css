@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 /* 10-foot UI: --u = 1/100 menší strany obrazovky (na 1920x1080 TV = 10,8 px) */
-:root { --r-card: calc(var(--u) * 1); --r-btn: calc(var(--u) * 0.75); --r-sm: calc(var(--u) * 0.5); --acc-rgb: 22,196,90; --sec-rgb: 56,189,248; --acc-soft: #4EE08A; --acc-deep: #0E9A44; --on-acc: #0A0A0C; --u: min(1vw, 1.7778vh); --glass: rgba(255, 255, 255, .05); --line: rgba(255, 255, 255, .10); }
+:root { --r-card: calc(var(--u) * 1); --r-btn: calc(var(--u) * 0.75); --r-sm: calc(var(--u) * 0.5); --acc-rgb: 46,155,255; --sec-rgb: 127,200,255; --acc-soft: #7CC4FF; --acc-deep: #1570D6; --on-acc: #0A0A0C; --u: min(1vw, 1.7778vh); --glass: rgba(255, 255, 255, .05); --line: rgba(255, 255, 255, .10); }
 html, body {
   height: 100%; margin: 0; overflow: hidden; background: #000; color: var(--c-chalk);
   font-family: 'Inter', system-ui, sans-serif; font-weight: 500; letter-spacing: -0.01em;
@@ -65,7 +65,7 @@ html, body {
     box-shadow: 0 calc(var(--u) * .6) calc(var(--u) * 3) rgba(var(--acc-rgb), .28), inset 0 1px 0 rgba(255, 255, 255, .5);
   }
   .icon { width: 1.15em; height: 1.15em; flex: none; object-fit: contain; }
-  /* neonová ikona je zelená; na barevném tlačítku je z ní tmavá silueta, ať je vidět */
+  /* neonová ikona je modrá; na barevném tlačítku je z ní tmavá silueta, ať je vidět */
   .btn-primary .icon, .on-acc .icon { filter: brightness(0) opacity(.8); }
 }
 

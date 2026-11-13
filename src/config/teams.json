@@ -1,5 +1,14 @@
 [
   {
+    "id": "rapid-plzen",
+    "name": "Rapid Plzeň",
+    "country": "Místní kluby",
+    "primary": "#5AAEF0",
+    "secondary": "#FFFFFF",
+    "kit": "stripes",
+    "logo": "img/teams/rapid-plzen.png"
+  },
+  {
     "id": "vicemilice",
     "name": "TJ Vícemilice",
     "country": "Místní kluby",

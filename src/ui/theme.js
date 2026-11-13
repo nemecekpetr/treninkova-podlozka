@@ -1,8 +1,8 @@
-// Téma: akcent je vždy zelená (jednotný vzhled, nezávislý na dresu). Oblíbený tým se projeví jen logem jako vodoznak;
+// Téma: akcent je vždy modrá Rapid Plzeň (jednotný vzhled, nezávislý na dresu). Oblíbený tým se projeví jen logem jako vodoznak;
 // s logem v pozadí se obrázek hřiště vypne, aby bylo pozadí jen jedno.
 import teams from '../config/teams.json';
 
-const DEFAULT = { primary: '#16C45A', secondary: '#2FD576' }; // akcent: zelená jako tráva
+const DEFAULT = { primary: '#2E9BFF', secondary: '#7FC8FF' }; // akcent: světle modrá Rapid Plzeň, druhá barva ledově modrá
 const BG_PITCH = "#000 url('img/art/bg_menu.webp') center / cover no-repeat";
 export const listTeams = () => teams;
 export const getTeam = (id) => teams.find((t) => t.id === id) || null;

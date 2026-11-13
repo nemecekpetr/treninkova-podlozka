@@ -2,7 +2,8 @@
 
 Hotové prvky jsou v `assets/img/art/*.webp` (průhledné WebP). Vyrábí je `node scripts/build-art.mjs` ze zdrojových obrázků
 z Gemini ve složce `obrazky/` (přiřazení souborů k významu je na začátku skriptu; `node scripts/build-art.mjs levels` přegeneruje jen jednu část).
-Styl: tmavé pozadí `#0A0A0C`, jediná výrazná zelená `#16C45A`, lesklé 3D prvky se zelenou září.
+Styl: tmavé pozadí `#0A0A0C`, jediná výrazná modrá `#2E9BFF` (barvy Rapid Plzeň), lesklé 3D prvky s modrou září.
+Původní grafika z Gemini byla zelená (`#16C45A`). Na modrou ji přebarvil `node scripts/recolor-art.mjs 209` (mění jen zelené odstíny, postavičky `av_*` nechává). Po novém `build-art.mjs` je potřeba přebarvení spustit znovu.
 
 | Soubor | Použití |
 |---|---|

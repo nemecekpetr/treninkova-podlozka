@@ -5,7 +5,7 @@ import { ballInner } from './BallSvg.js';
 
 const NS = 'http://www.w3.org/2000/svg';
 const YELLOW = '#F4B711';
-const accent = () => getComputedStyle(document.documentElement).getPropertyValue('--c-sun').trim() || '#16C45A';
+const accent = () => getComputedStyle(document.documentElement).getPropertyValue('--c-sun').trim() || '#2E9BFF';
 const RED = '#E5352B';
 let uidN = 0;
 
