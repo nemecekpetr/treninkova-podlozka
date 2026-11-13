@@ -46,7 +46,7 @@ export default function newPlayer(_p, { go, back, onBack }) {
 
   const drawPrev = () => {
     // při volbě čísla je vidět dres s číslem (i když je později zvolen avatar)
-    prev.replaceChildren(jerseyEl({ ...state, name: state.name || '', face: steps()[step] === 'number' ? 0 : state.face }, 12.5));
+    prev.replaceChildren(jerseyEl({ ...state, name: state.name || '', face: ['number', 'kit', 'colors'].includes(steps()[step]) ? 0 : state.face }, 12.5));
     prevName.textContent = state.name || '';
     prevTeam.replaceChildren();
     const t = getTeam(state.team);
@@ -195,7 +195,7 @@ export default function newPlayer(_p, { go, back, onBack }) {
       b.style.cssText += `;padding:${u(0.8)};border-radius:var(--r-btn);width:100%;min-width:0;display:flex;align-items:center;justify-content:center`;
       bs.push(b); grid.append(b);
     });
-    const drawKits = () => bs.forEach((b, i) => b.replaceChildren(jerseyEl({ ...state, avatar: i }, 5.4, { number: false })));
+    const drawKits = () => bs.forEach((b, i) => b.replaceChildren(jerseyEl({ ...state, face: 0, avatar: i }, 5.4, { number: false })));
     drawKits(); mark();
     panel.append(grid);
   };
