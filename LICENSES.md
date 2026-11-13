@@ -8,7 +8,8 @@ Aplikace Fotbal – Tréninková podložka je bezplatný nekomerční projekt, j
 | Popisy hráčů (`src/content/players.json`) | Vlastní | ručně psané |
 | Zajímavosti na rubu karet (`src/content/facts.json`) | Vlastní | ručně psané |
 | Loga klubů a reprezentací (`assets/img/teams`) | Oficiální weby klubů, TheSportsDB | ochranné známky svých vlastníků, použito jen k označení týmu; aplikace není se subjekty spojená. Při veřejném šíření zvážit jejich odstranění nebo nahrazení neutrálními znaky. |
-| Hlas Trenér (`assets/audio/voice`) | Microsoft Edge TTS (neuronový hlas cs-CZ-Antonin) | předgenerované věty; před veřejným šířením ověřit podmínky služby |
+| Hlas Antonín (`assets/audio/voice/trener`) | Microsoft Edge TTS (neuronový hlas cs-CZ-Antonin) | předgenerované věty; před veřejným šířením ověřit podmínky služby |
+| Hlas David (`assets/audio/voice/david`) | ElevenLabs, hlas „David – The Patient Teacher“ z Voice Library | předgenerované věty, vytvořené v placeném tarifu (Starter) s komerční licencí výstupů |
 | Zvuky (`assets/audio/sfx`) | Vlastní syntéza (`scripts/make-sounds.mjs`) | – |
 | Písmo Inter | @fontsource/inter | SIL Open Font License 1.1 |
 | Ikony (rezervní sada) | Lucide (lucide.dev) | ISC |

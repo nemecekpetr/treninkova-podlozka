@@ -7,11 +7,19 @@ Hlášky jsou v databázi `src/content/phrases.json`:
   Další variantu přidáš jako další řádek ve skupině a znovu spustíš generování.
 
 ## Soubory
-`assets/audio/voice/<styl>/<klíč>.mp3`, jediný styl: `trener` (neuronový hlas Antonín).
+`assets/audio/voice/<styl>/<klíč>.wav`, dva styly (rodič je přepíná v nastavení, Hlas):
+- `david`: **výchozí**, hlas „David – The Patient Teacher“ z ElevenLabs (model `eleven_multilingual_v2`).
+- `trener`: neuronový hlas Antonín (Microsoft Edge TTS).
+
+Nahrávky jsou uložené přímo v aplikaci a přehrávají se offline. ElevenLabs je potřeba jen při generování nových hlášek, aplikace funguje i bez předplatného.
 Vedle nich leží `_meta.json` (kdy v nahrávce skutečně začíná a končí řeč). Podle něj se věty nepřerušují a nečeká se na ticho na konci.
 
 ```
-node scripts/gen-voices.mjs          # vygeneruje chybějící hlášky (neuronové české hlasy), jde opakovat
+node scripts/gen-voices.mjs trener   # vygeneruje chybějící hlášky hlasu Antonín (zdarma), jde opakovat
+ELEVENLABS_API_KEY=… node scripts/gen-voices.mjs david   # hlas David (ElevenLabs, spotřebuje znaky z předplatného)
+node scripts/trim-voices.mjs         # ořízne MP3 z voice-src/ na čistou řeč a uloží WAV do assets/audio/voice/
+# David: WAV pak převzorkovat na 24 kHz (poloviční velikost), např.:
+# for f in assets/audio/voice/david/*.wav; do ffmpeg -y -i "$f" -ar 24000 -ac 1 /tmp/r.wav && mv /tmp/r.wav "$f"; done
 node scripts/analyze-voices.mjs      # přepočítá _meta.json
 ```
 Chybí-li soubor, mluví TTS zařízení.

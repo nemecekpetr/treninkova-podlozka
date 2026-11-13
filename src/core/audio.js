@@ -15,12 +15,14 @@ for (const [g, list] of Object.entries(phrases.groups)) {
   list.forEach((t, i) => { FALLBACK_TEXT[`${g}_${i + 1}`] = t; });
 }
 
-// Styly hlasu: jediný nahraný hlas (Antonín); rychlost a výška tónu jsou jen pro TTS zařízení, když soubor chybí.
+// Styly hlasu: nahrané hlasy (David z ElevenLabs = výchozí, Antonín z Edge TTS); rychlost a výška tónu jsou jen pro TTS zařízení, když soubor chybí.
+export const DEFAULT_VOICE_STYLE = 'david';
 export const VOICE_STYLES = {
-  trener: { label: 'Trenér', rate: 0.95, pitch: 0.8 },
+  david: { label: 'David', rate: 0.95, pitch: 0.9 },
+  trener: { label: 'Antonín', rate: 0.95, pitch: 0.8 },
 };
 const vol = { voice: 1, sfx: 0.8, music: 0.4 };
-let style = 'trener';
+let style = DEFAULT_VOICE_STYLE;
 let voiceIdx = 0;
 const cache = new Map(); // url -> 'missing' (efekty)
 let music = null;
@@ -30,7 +32,7 @@ export const setVolume = (ch, v) => {
   if (ch === 'music' && music) music.volume = vol.music;
 };
 export const getVolume = (ch) => vol[ch];
-export const setVoiceStyle = (s) => { style = VOICE_STYLES[s] ? s : 'trener'; preloadVoices(); };
+export const setVoiceStyle = (s) => { style = VOICE_STYLES[s] ? s : DEFAULT_VOICE_STYLE; preloadVoices(); };
 export const setVoiceIndex = (i) => { voiceIdx = Math.max(0, i | 0); };
 
 // ---- režim hlasu: 'voice' = Trenér mluví, 'beeps' = jen pípnutí, 'off' = ticho ----
